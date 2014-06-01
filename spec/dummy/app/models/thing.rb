@@ -1,3 +1,3 @@
 class Thing < ActiveRecord::Base
-  rated
+  include Rater::Rated
 end
