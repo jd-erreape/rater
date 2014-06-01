@@ -1,0 +1,4 @@
+= Rater
+
+* Rspec, spork and guard configuration extracted from -> http://namick.tumblr.com/post/17663752365/how-to-create-a-gemified-plugin-with-rails-3-2-rspec
+* Run specs - bundle exec guard
