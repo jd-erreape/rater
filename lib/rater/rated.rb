@@ -4,12 +4,11 @@ module Rater
 
     included do
       has_many :rates, as: :rateable, class_name: 'Rater::Rate'
+      private :rates, :rates= # Do not allow access to rates directly from outside
     end
 
     module ClassMethods
-      def rated(options = {})
 
-      end
     end
 
 
@@ -18,5 +17,3 @@ module Rater
     end
   end
 end
-
-ActiveRecord::Base.send :include, Rater::Rated
