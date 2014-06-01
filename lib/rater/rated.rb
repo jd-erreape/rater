@@ -3,6 +3,7 @@ module Rater
     extend ActiveSupport::Concern
 
     included do
+      has_many :rates, as: :rateable, class_name: 'Rater::Rate'
     end
 
     module ClassMethods

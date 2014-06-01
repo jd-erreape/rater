@@ -3,7 +3,9 @@ require 'spec_helper'
 describe Rater::Rated do
   subject { Thing.new }
 
-  it 'adds the polymorphic association'
+  it 'adds the polymorphic association' do
+    expect(subject).to have_many(:rates)
+  end
 
   describe '#rater' do
     let(:rater) { subject.rater }

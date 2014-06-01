@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 20140601133423) do
 
   create_table "rater_rates", force: true do |t|
     t.integer  "value"
+    t.integer  "rateable_id"
+    t.string   "rateable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
